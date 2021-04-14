@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  appId: 'Your app ID',
-  apiKey: 'Your API Key'
+  appId: 'App ID',
+  apiKey: 'API Key'
  };

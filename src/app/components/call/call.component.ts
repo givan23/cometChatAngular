@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CallComponent implements OnInit {
 
+  isChatOpen = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  emitToggleChat($event) {
+    this.isChatOpen = $event;
   }
 
 }

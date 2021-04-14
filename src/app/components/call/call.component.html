@@ -1,1 +1,7 @@
-<p>call works!</p>
+<div class="quik-chat" [ngClass]="{'chat-hidden':isChatOpen}">
+    <app-button-chat (emitToggleChat)="emitToggleChat($event)"></app-button-chat>
+  <div class="quik-chat-content">
+    <app-sidebar-chat></app-sidebar-chat>
+    <app-body-chat></app-body-chat>
+  </div>
+</div>

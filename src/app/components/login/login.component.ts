@@ -20,9 +20,16 @@ export class LoginComponent {
 
   // IF LOGGED SEND ME IN TO THE CHAT
   public signIn(): void {
-    this.chat.login(this.loginForm.value['uid']).subscribe(signedUser => {
+    const user = this.loginForm.value['uid'];
+    const check = user.localeCompare('admin') === 0;
+    
+    if (check) {
+      console.log("entrato in call");
       this.router.navigate(['call']);
-    });
+    } else {
+      console.log("entrato in login");
+      this.router.navigate(['login']);
+    }
 
   }
 

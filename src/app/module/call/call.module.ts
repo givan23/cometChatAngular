@@ -7,7 +7,8 @@ import { CallRootingModule } from './call-rooting.module';
   declarations: [],
   imports: [
     CommonModule,
-    CallRootingModule
+    CallRootingModule,
+    
   ]
 })
 export class CallModule { }

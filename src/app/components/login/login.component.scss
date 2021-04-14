@@ -1,0 +1,31 @@
+.login {
+  width: 100%;
+  background-color: rgb(212, 212, 243);
+  &-field {
+    width: 500px;
+    position: absolute;
+    top: 30%;
+    left: 34%;
+    padding: 40px 50px 30px 50px;
+    background-color: aliceblue;
+    border: 9px #d0e5ed solid;
+    border-radius: 25px;
+    .label {
+      color: #00000078;
+      font-weight: 700;
+    }
+    .input {
+      height: 45px;
+    }
+  }
+  &-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0 0 0;
+    .btn-disabled {
+      background-color: #17a2b83d;
+      border-color: #0f606d59;
+    }
+  }
+}

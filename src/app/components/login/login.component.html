@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="login">
+  <form class="login-field" [formGroup]="loginForm" (ngSubmit)="signIn()">
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="label form-label"
+        >Email address</label
+      >
+      <input
+        type="email"
+        class="input form-control"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+        formControlName="uid"
+        maxlength="25"
+      />
+    </div>
+
+    <div class="login-btn">
+      <button type="submit" class="btn btn-info" [ngClass]="{'btn-disabled': !loginForm.valid}" [disabled]="!loginForm.valid">Sign In</button>
+    </div>
+
+  </form>
+</div>

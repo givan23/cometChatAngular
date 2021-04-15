@@ -1,15 +1,48 @@
 .sidebar-chat {
   width: 200px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2px 0;
   overflow-y: auto;
   background-color: #d7d7d7;
 
-  &-item {
-    width: 100%;
-    height: 50px;
-    background-color: hotpink;
+  &-tab {
+    width: 98%;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    background-color: #f8f8f8;
     border-bottom: 2px solid #d7d7d7;
+    cursor: pointer;
+
+    .us-img {
+      width: 42px;
+      height: 42px;
+    }
+
+    .on-line {
+      border: greenyellow 2px solid;
+    }
+    .off-line {
+      border: red 2px solid;
+    }
+
+    p {
+      margin: 0 0 0 10px;
+    }
+
+    .username {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .city {
+      font-size: 12px;
+    }
   }
-  
+  &-tab:hover {
+    background-color: #d7d7d7;
+  }
 }

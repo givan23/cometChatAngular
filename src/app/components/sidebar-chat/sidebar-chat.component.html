@@ -1,6 +1,9 @@
 <div class="sidebar-chat">
-    <div class="sidebar-chat-item" *ngFor="let address of addressBookList"></div>
+  <div class="sidebar-chat-tab" *ngFor="let address of addressBookList">
+    <img class="us-img" [src]="address.img" alt="usI" [ngClass]="{'on-line': address.status, 'off-line': !address.status}"/>
+    <div>
+      <p class="username">{{ address.username }}</p>
+      <p class="city">{{ address.city }}</p>
+    </div>
+  </div>
 </div>
-
-
-
